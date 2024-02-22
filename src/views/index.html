@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %></title>
+    <%- include('partials/head.html') %>
+</head>
+<body>
+    <%- include('partials/navigation.html') %>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <div class="space"></div>  
+<!--imagens-->
+  <div class="container is-fullhd">
+  <div class="container">
+    <div class="tile is-ancestor">
+      <div class="tile is-parent" id="tiles">
+        <article class="tile is-child">
+          <figure class="image is-4by3">
+            <img src="img/f1.jpeg">
+          </figure>
+          <div class="content-img"></div>
+        </article>
+      </div>
+      <div class="tile is-parent" id="tiles">
+        <article class="tile is-child">
+          <figure class="image is-4by3">
+            <img src="img/f3.jpeg">
+          </figure>
+          <div class="content-img">
+            </div>
+        </article>
+      </div>
+      <div class="tile is-parent" id="tiles">
+        <article class="tile is-child">
+          <figure class="image is-4by3">
+            <img src="img/f4.jpeg">
+          </figure>
+          <div class="content-img">
+          </div>  
+        </article>
+      </div>
+    </div>
+    
+    <div class="tile is-ancestor">
+      <div class="tile is-vertical is-12">
+        <div class="tile">
+          <div class="tile is-parent is-vertical">
+            <article class="tile is-child" id="tiles">
+              <figure class="image is-3by2">
+                <img src="img/f5.jpeg">
+              </figure>
+            </article>
+            <article class="tile is-child" id="tiles">
+              <figure class="image is-1by1">
+                <img src="img/f6.jpeg">
+              </figure>
+            </article>
+          </div>
+          <div class="tile is-parent" id="tiles">
+            <article class="tile is-child">
+              <figure class="image is-2by3">
+                <img src="img/f18.jpeg">
+              </figure>
+            </article>
+          </div>
+          <div class="tile is-parent is-4" id="tiles">
+            <article class="tile is-child">
+              <figure class="image is-3by4">
+                <img src="img/f7.jpeg">
+              </figure>
+            </article>
+          </div>
+        </div>     
+  </div>     
+</div> 
+</div> 
+
+<section class="newsletter">
+<div class="container">
+<h3>Subscribe to my Newsletter</h3>
+<p> Sign up with your email address to receive news and updates.</p>
+<div class="Subscribe">
+  <input class="input is-light" type="text" placeholder="email">
+  <button class="button-subs" type="submit" onclick="alerta()" id="news"> Subscribe</button>
+</div>
+</div>    
+</section>
+
+<%- include('partials/footer.html') %>
+
+
+<script src="js/newsletter.js"></script>
+</body>
+</html>

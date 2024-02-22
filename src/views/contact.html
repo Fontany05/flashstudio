@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <%- include('partials/head.html') %>
+     
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <%- include('partials/navigation.html') %>
+<div class="container" id="contact">
+    <div class="title-contact">
+        <h1>Contact me</h1>
+        <p>Nostrum quos vitae, eius sint quo repellendus blanditiis porro perferendis dolores!</p>
+    </div>
+        <div class="columns">
+            <div class="column is-half">
+                <div class="tile">
+                <figure class="img-contact">
+                    <img src="img/f17.jpeg" alt="foto-contact">
+                </figure>   
+                </div>
+            </div>
+            <div class="column is-half">
+            <form action="" id="form">
+                <div class="field">
+                    <div class="control">
+                    <input class="input is-light" type="text" placeholder="Name" id="name" name="name">
+                    <p></p>
+                </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                    <input class="input is-light" type="email" placeholder="Email" id="email" name="email">
+                    <p></p>
+                </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                    <input class="input is-light" type="text" placeholder="Asunto" id="asunto" name="asunto">
+                    <p></p>
+                </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                    <textarea class="textarea is-light" placeholder="Message" id="menssage" type="textarea" name="mensaje"></textarea>
+                    <p></p>
+                    </div>
+                </div>
+                <div class="field is-grouped">
+                    <div class="control">
+                    <button type="submit" class="button button-btn"  onclick="enviar()">Enviar</button>
+                    </div>
+                </div>   
+            </form>
+            </div>
+            </div>
+        </div>
+
+
+    <%- include('partials/footer.html') %>
+
+    <script src="js/contact.js">
+    </script>
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
