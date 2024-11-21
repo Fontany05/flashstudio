@@ -225,29 +225,25 @@ margin: 8px;
 /*blog*/
 
 .sec-blog{
-    box-shadow: 5px 5px 5px 5px
-    #3f3d3e;
-    padding: 10px;
+    padding: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
-    border-radius: 10px;
-    margin: 20px;
+    border-radius: 5px;
+    margin: 10px;
 }
 
 #blog{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-    padding: 20px;
+    grid-template-columns: 2fr 2fr 2fr;
+    gap: 5px;
+    padding: 10px;
     margin-top: 20px;
     margin-bottom: 10px;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .blog-title{
     text-align: center;
-    border-color: #7e7c7c;
-    background-color: #051009;
     border-style: outset;
     border-radius: 10px;
     margin-bottom: 15px;
@@ -256,14 +252,14 @@ margin: 8px;
 
 .blog-title h2{
     font-size: 28px;
-    color: #ffffff;
+    color: #000;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 
 .card-blog{
-    width: 80%;
+    width: 250px;
     align-items: center;
 }
 
@@ -277,7 +273,7 @@ margin: 8px;
 
 .card-blog h3{
     color: #051009;
-    font-size: 1rem;
+    font-size: 15px;
     font-style: oblique;
     margin-bottom: 2px;
     padding: 3px;
@@ -285,7 +281,7 @@ margin: 8px;
 }
 
 .card-blog p {
-    font-size: 0.9rem;
+    font-size: 10px;
     margin-bottom: 15px;
 }
 

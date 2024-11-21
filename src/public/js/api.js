@@ -14,10 +14,16 @@ async function  getData() {
         const paragraph = document.createElement('p')
         paragraph.textContent = p.body
 
-        const reaccion = document.createElement('img')
-        reaccion.src = "https://spng.pngfind.com/pngs/s/247-2474217_png-file-svg-comment-icon-transparent-png.png"
+        const corazon = document.createElement('img')
+        corazon.src = "https://cdn.icon-icons.com/icons2/510/PNG/512/heart_icon-icons.com_50374.png"
 
-        card.append(title, paragraph, reaccion)
+         const carita = document.createElement('img')
+        carita.src = "https://cdn.icon-icons.com/icons2/1123/PNG/512/happysmilingemoticonface_79597.png"
+
+        const comentario = document.createElement('img')
+        comentario.src = "https://spng.pngfind.com/pngs/s/247-2474217_png-file-svg-comment-icon-transparent-png.png"
+
+        card.append(title, paragraph, corazon, comentario, carita)
         cblog.append(card)
     });
     
