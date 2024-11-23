@@ -18,5 +18,25 @@ router.get('/contact', (req, res) => {
     res.render('contact.html', { title: 'contact'});
 });
 
+//ruta para las imagenes
+router.get('/upload', (req, res) => {
+    res.render('post.html', { title: 'post'});
+})
+//carga de imagenes
+router.post('/upload', (req, res) => {
+    res.send('uploaded');
+})
+
+//rutas para eliminar imagen
+router.get('/image/:id', (req, res) => {
+    res.send('profile image')
+})
+
+
+router.get('/image/:id/delete', (req, res) => {
+    res.send('image delete');
+})
+
+
 
 module.exports = router;
