@@ -1,7 +1,7 @@
 const cblog = document.querySelector('#blog')
 
 async function  getData() {
-    const res = await fetch('https://jsonplaceholder.typicode.com/posts?userId=1')
+    const res = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=10');
     const posts = await res.json()
     posts.forEach(p => {
     

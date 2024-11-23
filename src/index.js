@@ -2,7 +2,7 @@ const express = require('express');
 const morgan = require('morgan');
 const path = require('path');
 const bodyParser = require('body-parser')
-
+const multer = require('multer');
 
 
 //initialization
@@ -18,7 +18,9 @@ app.set('view engine', 'ejs');
 //middlewares
 app.use(morgan('dev'))
 app.use(bodyParser.json())
+app.use(express.urlencoded({extended: false}));
 app.use(express.json());
+app.use(multer({dest: path.join(__dirname, 'public/uploads')}).single('image'));
 
 //routes
 app.use(require('./routes/index'));
