@@ -11,18 +11,18 @@
 
     <div class="container .is-max-widescreen" id="container-upload">
         <div class="box" id="box-post">
-          <form action="" class="form-post">
+          <form action="/upload" method="POST" enctype="multipart/form-data" class="form-post">
           <div class="field">  
         <div class="field">
           <label class="label">Title</label>
           <div class="control">
-            <input class="input is-normal" type="text" placeholder="Titulo" />
+            <input class="input form-control" type="text" placeholder="Titulo" name="title"/>
           </div>
         </div>
           <div class="field">
             <label class="label">Description</label>
             <div class="control">
-              <textarea class="textarea" placeholder="Descripcion"></textarea>
+              <textarea class="input form-control" placeholder="Descripcion" name="description"></textarea>
             </div>
           </div>
           <label class="file-label">
@@ -35,15 +35,13 @@
             </span>
           </label>
         </div>
-        </form>
-        <div class="field is-grouped">
+        <div class="field">
           <div class="control">
-            <button class="button form-button">Submit</button>
-          </div>
-          <div class="control">
-            <button class="button form-button">Cancel</button>
+            <button type="submit"  class="button form-button">Upload</button>
           </div>
         </div>
+        </form>
+      
       </div>
     </div>
 
